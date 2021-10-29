@@ -1,10 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="description" content="width=device-width, initial-scale=1">
+
+
+
+    <!--calling the js file used to make the background image stretch all the way across screen-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <style>
+        * {box-sizing: border-box;}
+
+        body {
+            margin: 0;
+            font-family: Aria, Helvetica, sans-serif;
+        }
+
+
+
+        .header a {
+            float: left;
+            color: green;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 25px;
+            border-radius: 4px;
+        }
+
+
+
+
+        .header a:hover {
+            background-color: #ddd;
+
+        }
+
+
+
+
+        @media screen and (max-width: 500px) {
+            .header a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+            .features {
+                margin: 4em auto;
+                padding: 1em;
+                position: relative;
+            }
+            .feature-title {
+                color: #333;
+                font-size: 12px;
+                font-weight: 700;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+            }
+            .features img {
+                -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+                -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+                box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+                margin-bottom: 16px;
+            }
+
+
+        }
+
+
+    </style>
+
 </head>
 <body>
-Hello World! IS601
+
+<nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: black; ">
+    <div class="container-fluid" >
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/GNOME_Web_logo--2018.svg/1024px-GNOME_Web_logo--2018.svg.png" width="40" height="40" ALT="0"/>
+        <ul class="nav navbar-nav" style="padding-right: 100px">
+
+            <li class="active"><a href="index.html" style="background-color: black; color: white; font-size: 15px">Home</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: white; font-size: 15px;  ">Topics
+                    <span class="caret"></span></a>
+                <ul class="dropdown-menu" style="background-color: white">
+                    <li><a href="history_of_internet.html">History of the Internet</a></li>
+                    <li><a href="Browsers.html">Browsers Wars</a></li>
+                    <li><a href="DOT_COM_BUBBLE.html">DOT COM BUBBLE</a></li>
+                    <li><a href="The_People.html">The People</a></li>
+                    <li><a href="The_internet_search.html">The Internet Search</a></li>
+                    <li><a href="DNS.html">IP Addresses and DNS</a> </li>
+                    <li><a href="Team.html">Members</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+    <div  style="padding-left:30px">
+        <h1>The History of the  Internet</h1>
+        <p></p>
+
+        <main>
+            <div class="book-container main justify-content-center ">
+            </div>
+            <div id="middle" class="container features">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <h3>Internet Invention</h3>
+                    <img  src="https://blog.paessler.com/hubfs/header/blog/history-of-the-internet-1.png" width="100" height="100" alt="0" style="border-radius: 50%">
+                    <p> <a href="history_of_internet.html">READ MORE</a></p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <h3 class="feature-title">BROWSERS WARS</h3>
+                    <img src="images/browsers.png" height="100" width="100" alt="0" style="border-radius: 50%"/>
+                    <p><a href="browsers.html">READ MORE</a></p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12" >
+                    <h3 class="feature-title">DOT COM BUBBLE</h3>
+                    <img src="https://ideas.ted.com/wp-content/uploads/sites/3/2018/12/tedtalks_2000dotcombubble_02.jpg" width="100" height="100" alt="0" style="border-radius: 50%">
+                    <p><a href="DOT_COM_BUBBLE.html">READ MORE</a></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <h3 class="feature-title">HISTORY OF DNS</h3>
+                    <img src="images/dns.gif" height="100" width="100" alt="0" style="border-radius: 50%"/>
+                    <p><a href="DNS.html">READ MORE</a> </p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <h3 class="feature-title">Historian Figures</h3>
+                    <img src="images/people.png" height="100" width="100" alt="0" style="border-radius: 50%"/>
+                    <P><a href="The_People.html">READ MORE</a> </P>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <h3 class="feature-title">Internet Search</h3>
+                    <img src="images/search.jpeg" height="100" width="100" alt="0" style="border-radius: 50%"/>
+                    <p><a href="The_internet_search.html">READ MORE</a></p>
+                </div>
+
+            </div>
+            </div>
+        </main>
+</main>
+
+
+    <div class="footer" style=" text-align: center; margin-right: 20px; background-color: black; font-size: 20px; color: white">
+            <p>&copy; 2021 Neha Kazi and Swathi Venkatesh Kumar</p>
+        </div>
+
+        </div>
+
+
+
+
+    </footer>
 </body>
 </html>
