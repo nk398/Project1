@@ -3,4 +3,3 @@
 [History of the Website](http://historyWebsite.eastus.azurecontainer.io)
  
 Created by Neha Kazi
-and by Swathi Venkatesh Kumar
