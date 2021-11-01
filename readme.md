@@ -10,7 +10,7 @@
 
 [IP ADDRESS AND DNS](http://kazi-kumar.eastus.azurecontainer.io/DNS.html)
 
-[TEAM MEMBERS](http://kazi-kumar.eastus.azurecontainer.io/team.html)
+[TEAM MEMBERS](http://kazi-kumar.eastus.azurecontainer.io/Team.html)
 
 [Set up a docker and azure]
 
