@@ -1,6 +1,6 @@
 # History of the Internet IS601
 
-[History of the Website](http://kazi-kumar.eastus.azurecontainer.io)
+[History of the Website](http://kazi-kumar.eastus.azurecontainer.io/index.html)
  
 # Done by Neha Kazi
 
