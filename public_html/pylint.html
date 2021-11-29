@@ -131,7 +131,7 @@
         <br>
         <h1 style = "margin-top: 0px; color: olivedrab;"> Overview of the Pylint </h1>
         <p>Pylint </p>
-        <h3 style = "margin-top: 0px; "> Creating Fixtures  </h3> 
+        <h3 style = "margin-top: 0px; "> Creating Fixtures  </h3>
         <p> Fixtures are repeatable baseline functions which can be run reliably by every test within a unit testing file. In our case, before each one of our tests, we need to clear the existing history of the calculator: </p>
         <script src="https://gist.github.com/Hollinss/fba3a563f617081a88064376ba940604.js"></script>
         <p>Here, a pytest fixture called <code>clear_history_fixture</code> is created to be repeatedly called each time we need to clear our history array described earlier in the OOP Article. The calculations class is called which contains the history array and the <code>.clear_history()</code> method is accessed to perform this operation.</p>
