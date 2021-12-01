@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object Oriented Programming</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--calling the js file used to make the background image stretch all the way across screen-->
+
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+</head>
+<style>
+    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+
+
+
+
+
+
+    a:hover {
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+    }
+
+
+
+
+    .header a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 4px;
+    }
+
+
+
+    .header a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+
+
+
+    @media screen and (max-width: 500px) {
+        .header a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+
+
+
+    }
+</style>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: black; ">
+    <div class="container-fluid" >
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/GNOME_Web_logo--2018.svg/1024px-GNOME_Web_logo--2018.svg.png" width="60px" height="60px" alt="0"/>
+
+        <ul class="nav navbar-nav" style="padding-right: 100px">
+
+            <li class="active"><a href="index.html" style="background-color: black; color: white; font-size: 15px">Home</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: white; font-size: 15px;  ">Topics
+                    <span class="caret"></span></a>
+                <ul class="dropdown-menu" style="background-color: white">
+                    <li><a href="history_of_internet.html">History of the Internet</a></li>
+                    <li><a href="browsers.html">Browsers Wars</a></li>
+                    <li><a href="DOT_COM_BUBBLE.html">DOT COM BUBBLE</a></li>
+                    <li><a href="The_People.html">The People</a></li>
+                    <li><a href="The_internet_search.html">The Internet Search</a></li>
+                    <li><a href="DNS.html">IP Addresses and DNS</a> </li>
+                    <li><a href="Team.html">Members</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: white; font-size: 15px; position: center ">OOPs
+                    <span class="caret"></span></a>
+                <ul class="dropdown-menu" style="background-color: white">
+                    <li><a href="pylint.html">Pylint&others</a></li>
+                    <li><a href="aaatesting.html">AAA Testing</a></li>
+                    <li><a href="oop.html">Object Oriented Programming</a></li>
+                    <li><a href="solidood.html">SOLID object oriented </a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+
+
+<div style="margin-left: 12px">
+
+    <div style = "background-color: white">
+        <br>
+        <img src="images/oops.png" style="margin: auto; display: block" height="300" width="400"/>
+        <h2>What is Object-Oriented Programming?</h2>
+            <p style="font-size: 17px">Object-Oriented Programming(OOP), is mainly about creating
+            "objects". An object is a group of interrelated variables and functions. Variable are often called
+            as a properties of the object whereas functions are called as the behavior of the objects. These objects gives
+            a better clarification and better quality of the program.</p>
+
+        <p style="font-size: 17px"> For example: in our <a href="https://github.com/nk398/calc2/blob/calc-part3/calc/calculator.py"><code>calculator program</code></a>
+            the calculator is the object. If we consider the calculator as an object then its properties would
+            be addition, subtraction, multiplication, and Division. Below shown the image of the calculator file:</p>
+        <img src="images/calculator.png" height="350" width="700" style="margin: auto; display: block;"/>
+        <div style="margin-bottom: 30px"></div>
+    <p style="font-size: 17px">Before we demonstrate the principals of OOPs, let's learn some terminology of OOps</p>
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>OOPs Terminology</th>
+                <th>Description</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Class</td>
+                <td> A user-defined prototype for an object that defines a set of attributes that characterize any object of the class. </td>
+
+            </tr>
+            <tr>
+                <td>Class Variable</td>
+                <td> that is shared by all instances of a class. Class variables are defined within a class but outside any of the class's methods. . </td>
+
+            </tr>
+            <tr>
+                <td>Data Member</td>
+                <td> A class variable or instance variable that holds data associated with a class and its objects. </td>
+
+            </tr>
+            <tr>
+                <td>Function Overloading</td>
+                <td>The assignment of more than one behavior to a particular function. The operation performed varies by the types of objects or arguments involved.</td>
+            </tr>
+            <tr>
+                <td>Instance Variable</td>
+                <td>A variable that is defined inside a method and belongs only to the current instance of a class.</td>
+            </tr>
+            <tr>
+                <td>Inheritance</td>
+                <td>The transfer of the characteristics of a class to other classes that are derived from it.</td>
+            </tr>
+            <tr>
+                <td>Instance</td>
+                <td>An individual object of a certain class. An object obj that belongs to a class Circle, for example, is an instance of the class Circle.</td>
+            </tr>
+            <tr>
+                <td>Instantiation</td>
+                <td>The creation of an instance of a class.</td>
+            </tr>
+            <tr>
+                <td>Method</td>
+                <td>A special kind of function that is defined in a class definition.</td>
+            </tr>
+            <tr>
+                <td>Object</td>
+                <td>A unique instance of a data structure that's defined by its class. An object comprises both data members (class variables and instance variables) and methods.</td>
+            </tr>
+            <tr>
+                <td>Operator overloading</td>
+                <td>The assignment of more than one function to a particular operator.</td>
+            </tr>
+            </tbody>
+        </table>
+        <h2> Principals of OOPs</h2>
+        <p style="font-size: 17px">There are four principals of Object-Oriented Programming</p>
+        <h3><strong>Encapsulation</strong></h3>
+            <p style="font-size: 17px"> In Python, we can restrict access to methods and variables. This prevents
+            data from direct modification which is called encapsulation. </p>
+        <img src="images/encap.png" height="350" width="700" style="margin: auto; display: block;"/>
+        <h3><strong>Inheritance</strong></h3>
+             <p style="font-size: 17px">It is a way of creating a new class for using details of an existing class without modifying it. </p>
+        <img src="images/inheritance.png" height="350" width="700" style="margin: auto; display: block;"/>
+        <h3><strong>Polymorphism</strong></h3>
+            <p style="font-size: 17px">The word polymorphism means having many forms. In programming, polymorphism means the same function name (but different signatures) being used for different types.</p>
+        <img src="images/polymorphism.png" height="350" width="700" style="margin: auto; display: block"/>
+        <h3><strong>Abstraction</strong></h3>
+        <p style="font-size: 17px"> A process of handling complexity by hiding unnecessary information from the user.</p>
+        <img src="images/abstract.png" height="350" width="700" style="margin: auto; display: block"/>
+
+        <h2>Conclusion</h2>
+        <p style="font-size: 17px">In this tutorial, you learned about object-oriented programming (OOP)
+            in Python. Most modern programming languages, such as Java, C#, and C++, follow OOP
+            principles, so the knowledge you gained here will be applicable no matter where your programming career
+            takes you.</p>
+
+    </div>
+
+</div>
+<div style="clear: both; margin-bottom: 30px"></div>
+<footer>
+    <div class="footer" style=" text-align: center; margin-right: 20px;  font-size: 15px; color: white; background-color: black">
+        &copy; <a href="https://github.com/nk398/Project1/tree/project02"> 2021 Neha Kazi Github</a> - <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fkumar-kazi.eastus.azurecontainer.io%2FDOT_COM_BUBBLE.html">W3C</a>
+    </div>
+
+
+</footer>
+
+</body>
+</html>
